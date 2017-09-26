@@ -1,0 +1,16 @@
+.navbar-brand > .navbar-item:hover {
+    background-color: white;
+}
+
+.navbar { 
+    position: fixed !important; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    z-index: 1
+}
+
+.navbar-end > .navbar-item {
+    width: 12rem;
+    text-align: center;
+}
