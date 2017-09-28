@@ -7,10 +7,40 @@
     top: 0; 
     left: 0; 
     right: 0; 
-    z-index: 1
+    z-index: 1;
 }
 
 .navbar-end > .navbar-item {
-    width: 12rem;
+    padding: 0 6rem;
     text-align: center;
 }
+
+html,body { 
+    height: 100%; 
+    margin: 0px; 
+    padding: 0px; 
+}
+
+#big-content-container {
+    height: 100%;
+}
+
+.content-container {
+    padding-top: 52px;
+    height: 100%;
+    margin: 0px;
+    background-color: white;
+}
+
+#intro {
+}
+
+#why-us {
+}
+
+#violins {
+}
+
+#contact {
+}
+
