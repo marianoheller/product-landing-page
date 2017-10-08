@@ -126,6 +126,30 @@ body {
 
 }
 
+.carousel {
+    margin-top: 2rem;
+}
+
+.carousel-cell {
+    width: 66%;
+    height: 20rem;
+    margin-right: 10px;
+    background: #8C8;
+    border-radius: 5px;
+    counter-increment: carousel-cell;
+}
+  
+/* cell number */
+.carousel-cell:before {
+    display: block;
+    text-align: center;
+    content: counter(carousel-cell);
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+}
+  
+
 #contact-container {
     margin-top: 8rem;
 }

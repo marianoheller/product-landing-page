@@ -8,8 +8,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css" />
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 	<link rel="stylesheet" href="./index.css" />
-	
-	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdYVfpMbKTwXWlDnqRR5cenPYnbMggDgA"></script>
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">	
 	
 	<title>Product Landing Page</title>
 </head>
@@ -22,14 +21,14 @@
 				Violin Store
 			</a>
 			
-			<button class="button navbar-burger">
+			<button class="button navbar-burger" data-target="navMenu">
 				<span></span>
 				<span></span>
 				<span></span>
 			</button>
 		</div>
 		
-		<div class="navbar-menu">
+		<div class="navbar-menu"  id="navMenu">
 			<div class="navbar-end">
 				<a class="navbar-item" href="#intro">
 					Intro
@@ -67,7 +66,7 @@
 				<div id="why-us-main-subtitle">
 					Because we are the best at what we do.
 				</div>
-				<div id="quotes-container">
+				<div id="quotes-container" class="is-hidden-mobile">
 					<div class="quote-box">
 						<h1 class="quote-text">"The best violin store, bar none"</h1>
 						<h2 class="quote-author has-text-right">New York Times</h2>
@@ -87,8 +86,8 @@
 			</div>
 		</div>
 		<div class="content-container" id="violins">
-			<div class="columns">
-				<div class="card column is-2 is-offset-3 is-8-mobile is-offset-2-mobile">
+			<div class="columns is-hidden-mobile">
+				<div class="card column is-2 is-offset-3">
 					<div class="card-image">
 						<figure class="image is-square">
 							<img src="./img/product1.jpg" alt="Placeholder image">
@@ -100,7 +99,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="card  column is-2 is-8-mobile is-offset-2-mobile">
+				<div class="card  column is-2">
 					<div class="card-image">
 						<figure class="image is-square">
 							<img src="./img/product2.jpg" alt="Placeholder image">
@@ -112,7 +111,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="card  column is-2 is-8-mobile is-offset-2-mobile">
+				<div class="card  column is-2">
 					<div class="card-image">
 						<figure class="image is-square">
 							<img src="./img/product3.jpg" alt="Placeholder image">
@@ -123,6 +122,14 @@
 							Deluxe violin for deluxe violinists
 						</div>
 					</div>
+				</div>
+			</div>
+			<div class="columns is-hidden-desktop">	
+				<div class="carousel"
+				data-flickity='{ "imagesLoaded": true, "percentPosition": false, "wrapAround": true }'>
+					<img src="./img/product1.jpg" alt="electric" />
+					<img src="./img/product2.jpg" alt="classic" />
+					<img src="./img/product3.jpg" alt="luxury" />
 				</div>
 			</div>
 		</div>
@@ -176,6 +183,7 @@
 	src="https://code.jquery.com/jquery-3.2.1.min.js"
 	integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
 	crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>	
 	<script src="./index.js"></script>
 </body>
 </html>
