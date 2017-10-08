@@ -74,3 +74,41 @@ body {
     background-color: white;
     color: black;
 }
+
+#why-us-container {
+    padding: 6rem;
+    color: white;
+}
+
+#why-us-main-title {
+    color: white;
+    font-size: 1.8rem;
+    line-height: 1.125
+}
+
+#why-us-main-subtitle {
+    color: white;
+    font-size: 2.25rem;
+    line-height: 1.125;
+    margin-bottom: 2rem;
+    font-style: bold;
+}
+
+#quotes-container {
+    padding: 1.5rem 20%;
+}
+
+.quote-text{
+    color: white;
+    font-size: 1.5rem;
+    line-height: 1.125;
+    font-style: italic;
+    margin-top: 1.25rem;
+}
+
+.quote-author{
+    color: white;
+    font-size: 1.25rem;
+    line-height: 1.125;
+    font-style: italic;
+}
