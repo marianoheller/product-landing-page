@@ -20,13 +20,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
 $(document).on('click', 'a[href^="#"]', function (event) {
     event.preventDefault();
-    console.log("SMOOTH!");
     $('html, body').animate({
         scrollTop: $($.attr(this, 'href')).offset().top
     }, 500);
 });
 
 
+function submitContact() {
+    return false;
+}
+
+/*
 
 
 //MAP
@@ -64,3 +68,6 @@ function init() {
         title: 'Snazzy!'
     });
 }
+
+
+*/

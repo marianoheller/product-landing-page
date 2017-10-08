@@ -1,107 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" href="./favicon.ico">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css" />
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" href="./index.css" />
-
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdYVfpMbKTwXWlDnqRR5cenPYnbMggDgA"></script>
-    
-    <title>Product Landing Page</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="shortcut icon" href="./favicon.ico">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css" />
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" href="./index.css" />
+	
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdYVfpMbKTwXWlDnqRR5cenPYnbMggDgA"></script>
+	
+	<title>Product Landing Page</title>
 </head>
 <body>
-
-    <nav class="navbar" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-            <a class="navbar-item" href="/">
-                <img src="./logo.svg" alt="Store logo" width="28" height="28">
-                Violin Store
-            </a>
-        
-            <button class="button navbar-burger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-
-        <div class="navbar-menu">
-            <div class="navbar-end">
-                <a class="navbar-item" href="#intro">
-                    Intro
-                </a>
-                <a class="navbar-item" href="#why-us">
-                    Why us?
-                </a>
-                <a class="navbar-item" href="#violins">
-                    Our violins
-                </a>
-                <a class="navbar-item" href="#contact">
-                    Contact
-                </a>
-            </div>
-        </div>
-    </nav>
-
-
-    <div id="big-content-container">
-        <div class="content-container" id="intro">
-            <div id="intro-container" class="container has-text-centered">
-                <h1 id="intro-title">Violin Store</h1>
-                <h2 id="intro-subtitle">The best violins out there!</h2>
-                <div id="down-button">
-                    <a href="#why-us"><i class="fa fa-angle-double-down fa-3x"></i></a>
-                </div>
-                
-            </div>
-        </div>
-        <div class="content-container" id="why-us">
-            <div id="why-us-container" class="container has-text-centered">
-                <div id="why-us-main-title">
-                        Why us?
-                </div>
-                <div id="why-us-main-subtitle">
-                        Because we are the best at what we do.
-                </div>
-                <div id="quotes-container">
-                    <div class="quote-box">
-                        <h1 class="quote-text">"The best violin store, bar none"</h1>
-                        <h2 class="quote-author has-text-right">New York Times</h2>
-                    </div>
-    
-                    <div class="quote-box">
-                        <h1 class="quote-text">"They used to be good, now they are better"</h1>
-                        <h2 class="quote-author has-text-right">The Guardian</h2>
-                    </div>
-    
-                    <div class="quote-box">
-                        <h1 class="quote-text">"The violin store isn't that good... said no one ever"</h1>
-                        <h2 class="quote-author has-text-right">China Daily</h2>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-        <div class="content-container" id="violins">
-            the best violins
-        </div>
-        <div class="content-container" id="contact">
-            <div id="map"></div>
-        </div>
-    </div>
-
-
-    
-
-
-    <script
-    src="https://code.jquery.com/jquery-3.2.1.min.js"
-    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-    crossorigin="anonymous"></script>
-    <script src="./index.js"></script>
+	
+	<nav class="navbar" role="navigation" aria-label="main navigation">
+		<div class="navbar-brand">
+			<a class="navbar-item" href="/">
+				<img src="./logo.svg" alt="Store logo" width="28" height="28">
+				Violin Store
+			</a>
+			
+			<button class="button navbar-burger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+		</div>
+		
+		<div class="navbar-menu">
+			<div class="navbar-end">
+				<a class="navbar-item" href="#intro">
+					Intro
+				</a>
+				<a class="navbar-item" href="#why-us">
+					Why us?
+				</a>
+				<a class="navbar-item" href="#violins">
+					Our violins
+				</a>
+				<a class="navbar-item" href="#contact">
+					Contact
+				</a>
+			</div>
+		</div>
+	</nav>
+	
+	
+	<div id="big-content-container">
+		<div class="content-container" id="intro">
+			<div id="intro-container" class="container has-text-centered">
+				<h1 id="intro-title">Violin Store</h1>
+				<h2 id="intro-subtitle">The best violins out there!</h2>
+				<div id="down-button">
+					<a href="#why-us"><i class="fa fa-angle-double-down fa-3x"></i></a>
+				</div>
+				
+			</div>
+		</div>
+		<div class="content-container" id="why-us">
+			<div id="why-us-container" class="container has-text-centered">
+				<div id="why-us-main-title">
+					Why us?
+				</div>
+				<div id="why-us-main-subtitle">
+					Because we are the best at what we do.
+				</div>
+				<div id="quotes-container">
+					<div class="quote-box">
+						<h1 class="quote-text">"The best violin store, bar none"</h1>
+						<h2 class="quote-author has-text-right">New York Times</h2>
+					</div>
+					
+					<div class="quote-box">
+						<h1 class="quote-text">"They used to be good, now they are better"</h1>
+						<h2 class="quote-author has-text-right">The Guardian</h2>
+					</div>
+					
+					<div class="quote-box">
+						<h1 class="quote-text">"The violin store isn't that good... said no one ever"</h1>
+						<h2 class="quote-author has-text-right">China Daily</h2>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		<div class="content-container" id="violins">
+			<div class="columns">
+				<div class="card column is-2 is-offset-3 is-8-mobile is-offset-2-mobile">
+					<div class="card-image">
+						<figure class="image is-square">
+							<img src="./img/product1.jpg" alt="Placeholder image">
+						</figure>
+					</div>
+					<div class="card-content">					
+						<div class="content">
+							Go electric with this one
+						</div>
+					</div>
+				</div>
+				<div class="card  column is-2 is-8-mobile is-offset-2-mobile">
+					<div class="card-image">
+						<figure class="image is-square">
+							<img src="./img/product2.jpg" alt="Placeholder image">
+						</figure>
+					</div>
+					<div class="card-content">					
+						<div class="content">
+							Just another Nicolò Amati violin
+						</div>
+					</div>
+				</div>
+				<div class="card  column is-2 is-8-mobile is-offset-2-mobile">
+					<div class="card-image">
+						<figure class="image is-square">
+							<img src="./img/product3.jpg" alt="Placeholder image">
+						</figure>
+					</div>
+					<div class="card-content">					
+						<div class="content">
+							Deluxe violin for deluxe violinists
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="content-container columns" id="contact">
+			<div class="column is-4 is-offset-4" id="contact-container">
+				<form onsubmit="return submitContact()">
+					<div class="field">
+						<label class="label">Email</label>
+						<div class="control has-icons-left has-icons-right">
+							<input class="input is-danger" type="email" placeholder="Email input">
+							<span class="icon is-small is-left">
+								<i class="fa fa-envelope"></i>
+							</span>
+						</div>
+					</div>
+					
+					<div class="field">
+						<label class="label">Subject</label>
+						<div class="control">
+							<input class="input" type="text" placeholder="Subject">
+						</div>
+					</div>
+					
+					
+					<div class="field">
+						<label class="label">Message</label>
+						<div class="control">
+							<textarea class="textarea" placeholder="Textarea"></textarea>
+						</div>
+					</div>
+					
+					
+					<div class="field is-grouped">
+						<div class="control">
+							<button class="button is-primary">Submit</button>
+						</div>
+						<div class="control">
+							<button class="button is-link">Cancel</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	
+	
+	<script
+	src="https://code.jquery.com/jquery-3.2.1.min.js"
+	integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	crossorigin="anonymous"></script>
+	<script src="./index.js"></script>
 </body>
 </html>
