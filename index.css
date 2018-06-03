@@ -161,3 +161,14 @@ body {
 .field > .control > button {
     color: white;
 }
+
+#nope > div > head > html {
+  display: flex;
+}
+
+
+@media screen {
+  #nope {
+    display: flex;
+  }     
+}

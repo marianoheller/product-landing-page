@@ -13,38 +13,40 @@
 	<title>Product Landing Page</title>
 </head>
 <body>
-	
-	<nav class="navbar" role="navigation" aria-label="main navigation">
-		<div class="navbar-brand">
-			<a class="navbar-item" href="/">
-				<img src="./logo.svg" alt="Store logo" width="28" height="28">
-				Violin Store
-			</a>
-			
-			<button class="button navbar-burger" data-target="navMenu">
-				<span></span>
-				<span></span>
-				<span></span>
-			</button>
-		</div>
-		
-		<div class="navbar-menu"  id="navMenu">
-			<div class="navbar-end">
-				<a class="navbar-item" href="#intro">
-					Intro
-				</a>
-				<a class="navbar-item" href="#why-us">
-					Why us?
-				</a>
-				<a class="navbar-item" href="#violins">
-					Our violins
-				</a>
-				<a class="navbar-item" href="#contact">
-					Contact
-				</a>
-			</div>
-		</div>
-	</nav>
+  <header id="header">
+    <img style="height: 0px; width: 0px" id="header-img" src="" />
+    <nav class="navbar" id="nav-bar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="/">
+          <img src="./logo.svg" alt="Store logo" width="28" height="28">
+          Violin Store
+        </a>
+        
+        <button class="button navbar-burger" data-target="navMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      
+      <div class="navbar-menu"  id="navMenu">
+        <div class="navbar-end">
+          <a class="navbar-item nav-link" href="#intro">
+            Intro
+          </a>
+          <a class="navbar-item nav-link" href="#why-us">
+            Why us?
+          </a>
+          <a class="navbar-item nav-link" href="#violins">
+            Our violins
+          </a>
+          <a class="navbar-item nav-link" href="#contact">
+            Contact
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
 	
 	
 	<div id="big-content-container">
@@ -54,7 +56,11 @@
 				<h2 id="intro-subtitle">The best violins out there!</h2>
 				<div id="down-button">
 					<a href="#why-us"><i class="fa fa-angle-double-down fa-3x"></i></a>
-				</div>
+        </div>
+        <video width="0" height="0" controls id="video" src="lalal.ogg" style="display: none"></video>
+        <iframe width="420" height="315"
+          src="https://www.youtube.com/embed/pT4IufMeyYA">
+        </iframe>
 				
 			</div>
 		</div>
@@ -135,11 +141,11 @@
 		</div>
 		<div class="content-container columns" id="contact">
 			<div class="column is-4 is-offset-4" id="contact-container">
-				<form onsubmit="return submitContact()">
+				<form id="form" onsubmit="return submitContact()" action="https://www.freecodecamp.com/email-submit">
 					<div class="field">
 						<label class="label">Email</label>
 						<div class="control has-icons-left has-icons-right">
-							<input class="input is-danger" type="email" placeholder="Email input">
+							<input class="input is-danger" type="email" id="email" name="email" placeholder="Email input">
 							<span class="icon is-small is-left">
 								<i class="fa fa-envelope"></i>
 							</span>
@@ -164,7 +170,7 @@
 					
 					<div class="field is-grouped">
 						<div class="control">
-							<button class="button is-primary">Submit</button>
+							<input type="submit" id="submit" class="button is-primary">Submit</button>
 						</div>
 						<div class="control">
 							<button class="button is-link">Cancel</button>
